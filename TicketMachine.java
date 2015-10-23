@@ -37,7 +37,6 @@ public class TicketMachine
     {
         return price;
     }
-
     /**
      * Return the amount of money already inserted for the
      * next ticket.
@@ -45,6 +44,7 @@ public class TicketMachine
     public int getBalance()
     {
         return balance;
+        
     }
 
     /**
@@ -54,7 +54,12 @@ public class TicketMachine
     {
         balance = balance + amount;
     }
-
+    
+    public void prompt()
+    {
+      System.out.println("Please, insert the correct amount of the money");
+    }
+    
     /**
      * Print a ticket.
      * Update the total collected and
@@ -66,7 +71,7 @@ public class TicketMachine
         System.out.println("##################");
         System.out.println("# The BlueJ Line");
         System.out.println("# Ticket");
-        System.out.println("# " + price + " cents.");
+        System.out.println("# " + price + " euros.");
         System.out.println("##################");
         System.out.println();
 
